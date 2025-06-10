@@ -1,0 +1,12 @@
+name: ci-python-workflow
+on: [push]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - run: python3 teste_math.py
+      - run: python3 -m unittest discover -s tests -p "*.py -v"
