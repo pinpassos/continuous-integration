@@ -9,4 +9,4 @@ jobs:
         with:
           python-version: '3.8'
       - run: python3 teste_math.py
-      - run: python3 -m unittest -v"
+      - run: python3 -m unittest -v
