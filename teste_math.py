@@ -8,7 +8,7 @@ class MyMathTestCase(unittest.TestCase):
 
     def test_addition_sum_number(self):
         """Test the sum of two numbers."""
-        sum_numbers_result = sum_numbers(5, 12)
+        sum_numbers_result = sum_numbers(5, 5)
         self.assertEqual(sum_numbers_result, 10)
 
 
